@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buddy_bg"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIGURATION"
+            android:textColor="@color/buddy_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Device Name" android:textColor="@color/buddy_text" />
+        <EditText android:id="@+id/etDeviceName" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:backgroundTint="@color/buddy_primary" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Local Wake Word" android:textColor="@color/buddy_text" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/etWakeWord" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:backgroundTint="@color/buddy_primary" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Peer Wake Word (Target Remote)" android:textColor="@color/buddy_text" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/etPeerWakeWord" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:backgroundTint="@color/buddy_primary" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Peer IP Address" android:textColor="@color/buddy_text" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/etHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:backgroundTint="@color/buddy_primary" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Peer SSH Port" android:textColor="@color/buddy_text" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/etPort" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:textColor="@color/white" android:backgroundTint="@color/buddy_primary" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Peer SSH Username" android:textColor="@color/buddy_text" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/etUser" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:backgroundTint="@color/buddy_primary" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Peer SSH Password" android:textColor="@color/buddy_text" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/etPass" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:textColor="@color/white" android:backgroundTint="@color/buddy_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="SAVE CONFIGURATION"
+            app:backgroundTint="@color/buddy_primary"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+</ScrollView>
